@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Search for lost and found items on CanBeFound.com - College Lost and Found Platform">
+    <meta name="description"
+        content="Search for lost and found items on CanBeFound.com - College Lost and Found Platform">
     <title>Search Items - CanBeFound.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/search.css">
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
+
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    
+
     <!-- Accessibility Toolbar -->
     <div class="accessibility-toolbar" id="accessibilityToolbar">
         <div class="toolbar-content">
@@ -27,7 +32,7 @@
                 <span class="btn-icon">A+</span>
                 <span class="btn-text">Larger Text</span>
             </button>
-            
+
         </div>
     </div>
 
@@ -39,13 +44,13 @@
                     <span class="logo-text">Can</span><span class="logo-domain">BeFound</span>
                 </a>
             </div>
-            
+
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
             </button>
-            
+
             <div class="nav-menu" id="navMenu">
                 <ul class="nav-links">
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -80,9 +85,9 @@
                 <div class="search-container">
                     <div class="search-bar-container">
                         <div class="search-bar">
-                            <input type="text" id="searchInput" class="search-input" 
-                                   placeholder="Search for items by name, description, or keywords..."
-                                   aria-label="Search for items">
+                            <input type="text" id="searchInput" class="search-input"
+                                placeholder="Search for items by name, description, or keywords..."
+                                aria-label="Search for items">
                             <button class="search-btn" id="searchBtn" aria-label="Search">
                                 <span class="search-icon">🔍</span>
                             </button>
@@ -154,6 +159,55 @@
                         </div>
                     </div>
                 </div>
+                <div class="items-container grid-view" id="itemsContainer">
+                    <!-- Dummy Item 1 -->
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="/Apple-iphone-14-Pro-review-graphitevblack-rotated.webp" alt="iPhone 14">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">iPhone 14</h3>
+                            <p class="item-description">Lost near Library on 10th Aug 2025. Black color, 128GB.</p>
+                            <span class="item-status lost">Lost</span>
+                        </div>
+                    </div>
+
+                    <!-- Dummy Item 2 -->
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="/images (1).jpeg" alt="Dell Laptop Bag">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Dell Laptop Bag</h3>
+                            <p class="item-description">Found in Cafeteria. Contains some books and charger.</p>
+                            <span class="item-status found">Found</span>
+                        </div>
+                    </div>
+
+                    <!-- Dummy Item 3 -->
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/200x150?text=Silver+Watch" alt="Silver Watch">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Silver Watch</h3>
+                            <p class="item-description">Lost in Gymnasium. Brand: Casio, Metal Strap.</p>
+                            <span class="item-status lost">Lost</span>
+                        </div>
+                    </div>
+
+                    <!-- Dummy Item 4 -->
+                    <div class="item-card">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/200x150?text=Blue+Backpack" alt="Blue Backpack">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-title">Blue Backpack</h3>
+                            <p class="item-description">Found in Parking Area. No ID inside.</p>
+                            <span class="item-status found">Found</span>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="search-results">
                     <div class="results-header">
@@ -175,23 +229,73 @@
                     </div>
 
                     <div class="items-container grid-view" id="itemsContainer">
-                        <!-- Items will be loaded here -->
+                        <!-- Dummy Item 1 -->
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/200x150?text=iPhone+14" alt="iPhone 14">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">iPhone 14</h3>
+                                <p class="item-description">Lost near Library on 12th Aug 2025. Black color, 128GB.</p>
+                                <span class="item-status lost">Lost</span>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 2 -->
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/200x150?text=Dell+Laptop+Bag"
+                                    alt="Dell Laptop Bag">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Dell Laptop Bag</h3>
+                                <p class="item-description">Found in Cafeteria. Contains some books and charger.</p>
+                                <span class="item-status found">Found</span>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 3 -->
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/200x150?text=Silver+Watch" alt="Silver Watch">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Silver Watch</h3>
+                                <p class="item-description">Lost in Gymnasium. Brand: Casio, Metal Strap.</p>
+                                <span class="item-status lost">Lost</span>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Item 4 -->
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://via.placeholder.com/200x150?text=Blue+Backpack" alt="Blue Backpack">
+                            </div>
+                            <div class="item-details">
+                                <h3 class="item-title">Blue Backpack</h3>
+                                <p class="item-description">Found in Parking Area. No ID inside.</p>
+                                <span class="item-status found">Found</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="loading-spinner" id="loadingSpinner" style="display: none;">
-                        <div class="spinner"></div>
-                        <span>Loading items...</span>
-                    </div>
-
-                    <div class="no-results" id="noResults" style="display: none;">
-                        <div class="no-results-icon">🔍</div>
-                        <h3 class="no-results-title">No items found</h3>
-                        <p class="no-results-text">Try adjusting your search criteria or filters.</p>
-                        <button class="btn btn-primary" onclick="document.getElementById('searchInput').value=''; searchItems();">
-                            Show All Items
-                        </button>
-                    </div>
                 </div>
+
+                <div class="loading-spinner" id="loadingSpinner" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>Loading items...</span>
+                </div>
+
+                <div class="no-results" id="noResults" style="display: none;">
+                    <div class="no-results-icon">🔍</div>
+                    <h3 class="no-results-title">No items found</h3>
+                    <p class="no-results-text">Try adjusting your search criteria or filters.</p>
+                    <button class="btn btn-primary"
+                        onclick="document.getElementById('searchInput').value=''; searchItems();">
+                        Show All Items
+                    </button>
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -219,8 +323,8 @@
             <form class="modal-body" id="loginForm">
                 <div class="form-group">
                     <label for="collegeId" class="form-label">College ID</label>
-                    <input type="text" id="collegeId" name="collegeId" class="form-input" required 
-                           aria-describedby="college-id-help">
+                    <input type="text" id="collegeId" name="collegeId" class="form-input" required
+                        aria-describedby="college-id-help">
                     <small id="college-id-help" class="form-help">Enter your student or staff ID</small>
                 </div>
                 <div class="form-group">
@@ -249,8 +353,8 @@
                 </div>
                 <div class="form-group">
                     <label for="signupEmail" class="form-label">College Email</label>
-                    <input type="email" id="signupEmail" name="email" class="form-input" required 
-                           placeholder="yourname@college.edu">
+                    <input type="email" id="signupEmail" name="email" class="form-input" required
+                        placeholder="yourname@college.edu">
                     <small class="form-help">Must be a valid college email address</small>
                 </div>
                 <div class="form-group">
@@ -259,8 +363,8 @@
                 </div>
                 <div class="form-group">
                     <label for="signupPassword" class="form-label">Password</label>
-                    <input type="password" id="signupPassword" name="password" class="form-input" required 
-                           minlength="6">
+                    <input type="password" id="signupPassword" name="password" class="form-input" required
+                        minlength="6">
                     <small class="form-help">At least 6 characters</small>
                 </div>
                 <div class="form-group">
@@ -269,7 +373,9 @@
                 </div>
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary btn-full">Create Account</button>
-                    <p class="form-help">Already have an account? <a href="#" onclick="window.ModalManager?.closeModal('signupModal'); window.ModalManager?.openModal('loginModal');">Login here</a></p>
+                    <p class="form-help">Already have an account? <a href="#"
+                            onclick="window.ModalManager?.closeModal('signupModal'); window.ModalManager?.openModal('loginModal');">Login
+                            here</a></p>
                 </div>
             </form>
         </div>
@@ -282,11 +388,11 @@
                 <div class="footer-section">
                     <h3 class="footer-title">CanBeFound.com</h3>
                     <p class="footer-description">
-                        Your trusted college Lost and Found platform, helping students and staff 
+                        Your trusted college Lost and Found platform, helping students and staff
                         reconnect with their lost belongings.
                     </p>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-subtitle">Quick Links</h4>
                     <ul class="footer-links">
@@ -296,7 +402,7 @@
                         <li><a href="auctions.html">Auctions</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-subtitle">Support</h4>
                     <ul class="footer-links">
@@ -306,7 +412,7 @@
                         <li><a href="privacy.html#terms">Terms of Service</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4 class="footer-subtitle">Contact Information</h4>
                     <div class="contact-info">
@@ -316,7 +422,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>&copy; 2025 CanBeFound.com. All rights reserved.</p>
                 <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
@@ -333,4 +439,5 @@
     <script src="api-client.js"></script>
     <script src="js/api-integration.js"></script>
 </body>
+
 </html>
