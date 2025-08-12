@@ -5,8 +5,8 @@ let database = {
   users: [
     {
       id: 1,
-      name: 'John Doe',
-      email: 'john.doe@college.edu',
+      name: 'Om Pingale',
+      email: 'omp@college.edu',
       collegeId: 'STU001',
       password: 'password123',
       role: 'student',
@@ -15,8 +15,8 @@ let database = {
     },
     {
       id: 2,
-      name: 'Jane Smith',
-      email: 'jane.smith@college.edu',
+      name: 'Anmol Berry',
+      email: 'anmolb@college.edu',
       collegeId: 'STU002',
       password: 'password123',
       role: 'student',
@@ -45,9 +45,9 @@ let database = {
       date: '2025-01-15',
       description: 'Black iPhone 13 Pro with blue case. Has a small scratch on the back.',
       image: 'https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=400',
-      reportedBy: 'John Doe',
+      reportedBy: 'Om Pingale',
       approved: true,
-      contactEmail: 'john.doe@college.edu'
+      contactEmail: 'omp@college.edu'
     },
     {
       id: 2,
@@ -58,9 +58,9 @@ let database = {
       date: '2025-01-14',
       description: 'Large black backpack with laptop compartment. Contains some books.',
       image: 'https://images.pexels.com/photos/2905238/pexels-photo-2905238.jpeg?auto=compress&cs=tinysrgb&w=400',
-      reportedBy: 'Jane Smith',
+      reportedBy: 'Anmol Berry',
       approved: true,
-      contactEmail: 'jane.smith@college.edu'
+      contactEmail: 'anmolb@college.edu'
     },
     {
       id: 3,
@@ -71,9 +71,9 @@ let database = {
       date: '2025-01-13',
       description: 'Silver digital watch with black strap. Waterproof.',
       image: 'https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=400',
-      reportedBy: 'Mike Johnson',
+      reportedBy: 'Gaurav',
       approved: true,
-      contactEmail: 'mike.johnson@college.edu'
+      contactEmail: 'Gaurav@college.edu'
     },
     {
       id: 4,
