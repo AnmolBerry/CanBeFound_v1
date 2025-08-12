@@ -1,0 +1,618 @@
+<!--version="1.0" encoding="UTF-8" standalone="yes"--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="792pt">
+ <g id="SFixTitle"/>
+ <g id="SContent">
+  <g transform="scale(1.33333)">
+   <rect width="100%" height="100%" fill="white"/>
+   <g>
+    <g>
+     <g/>
+     <g shape-rendering="crispEdges"/>
+     <g/>
+    </g>
+    <g>
+     <g/>
+    </g>
+    <g>
+     <g/>
+    </g>
+   </g>
+   <g transform="matrix(1,0,0,1,54,72)">
+    <defs>
+     <clipPath id="CLIP0">
+      <path d="M-0.5,-0.5 L487.5,-0.5 L487.5,643.5 L-0.5,643.5 Z "/>
+     </clipPath>
+    </defs>
+    <g clip-path="url(#CLIP0)">
+     <g/>
+     <g shape-rendering="crispEdges"/>
+     <g/>
+    </g>
+    <defs>
+     <clipPath id="CLIP1">
+      <path d="M-0.5,-1.45363903 L487.5,-1.45363903 L487.5,644.546386719 L-0.5,644.546386719 Z "/>
+     </clipPath>
+    </defs>
+    <g clip-path="url(#CLIP1)">
+     <g>
+      <g/>
+     </g>
+    </g>
+    <defs>
+     <clipPath id="CLIP2">
+      <path d="M-0.5,-0.5 L487.5,-0.5 L487.5,643.5 L-0.5,643.5 Z "/>
+     </clipPath>
+    </defs>
+    <g clip-path="url(#CLIP2)">
+     <g>
+      <defs>
+       <clipPath id="CLIP3">
+        <path d="M0.25,0.25 L35.261482239,0.25 L35.261482239,86.241523743 L0.25,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP3)">
+       <g>
+        <g transform="matrix(1,0,0,1,15.265741348,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">v</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP4">
+        <path d="M35.761482239,0.25 L53.41179657,0.25 L53.41179657,86.241523743 L35.761482239,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP4)">
+       <g>
+        <g transform="matrix(1,0,0,1,41.544654846,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">fr</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP5">
+        <path d="M53.91179657,0.25 L68.405532837,0.25 L68.405532837,86.241523743 L53.91179657,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP5)">
+       <g>
+        <g transform="matrix(1,0,0,1,57.28263092,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">ip</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP6">
+        <path d="M68.905532837,0.25 L92.079856873,0.25 L92.079856873,86.241523743 L68.905532837,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP6)">
+       <g>
+        <g transform="matrix(1,0,0,1,74.953414917,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">op</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP7">
+        <path d="M92.579856873,0.25 L115.754180908,0.25 L115.754180908,86.241523743 L92.579856873,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP7)">
+       <g>
+        <g transform="matrix(1,0,0,1,100.570617676,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">w</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP8">
+        <path d="M116.254180908,0.25 L139.428497314,0.25 L139.428497314,86.241523743 L116.254180908,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP8)">
+       <g>
+        <g transform="matrix(1,0,0,1,125.07170105,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">h</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP9">
+        <path d="M139.928497314,0.25 L178.885696411,0.25 L178.885696411,86.241523743 L139.928497314,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP9)">
+       <g>
+        <g transform="matrix(1,0,0,1,152.489074707,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">nm</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP10">
+        <path d="M179.385696411,0.25 L202.560012817,0.25 L202.560012817,86.241523743 L179.385696411,86.241523743 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP10)">
+       <g>
+        <g transform="matrix(1,0,0,1,182.66394043,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">ddd</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP11">
+        <path d="M203.060028076,0.25 L2382.965087891,0.25 L2382.965087891,12.105932236 L203.060028076,12.105932236 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP11)">
+       <g>
+        <g transform="matrix(1,0,0,1,1278.619750977,11.386839867)">
+         <text x="0" y="-2.110664129" class="f0">assets</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP12">
+        <path d="M203.060028076,12.605932236 L245.96295166,12.605932236 L245.96295166,86.241531372 L203.060028076,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP12)">
+       <g>
+        <g transform="matrix(1,0,0,1,220.635452271,54.632606506)">
+         <text x="0" y="-2.110664129" class="f0">id</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP13">
+        <path d="M246.46295166,12.605932236 L306.727050781,12.605932236 L306.727050781,86.241531372 L246.46295166,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP13)">
+       <g>
+        <g transform="matrix(1,0,0,1,269.676971436,54.632606506)">
+         <text x="0" y="-2.110664129" class="f0">nm</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP14">
+        <path d="M307.227050781,12.605932236 L324.877380371,12.605932236 L324.877380371,86.241531372 L307.227050781,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP14)">
+       <g>
+        <g transform="matrix(1,0,0,1,313.010223389,54.632606506)">
+         <text x="0" y="-2.110664129" class="f0">fr</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP15">
+        <path d="M325.377349854,12.605932236 L2382.965087891,12.605932236 L2382.965087891,24.461864471 L325.377349854,24.461864471 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP15)">
+       <g>
+        <g transform="matrix(1,0,0,1,1340.887084961,23.742771149)">
+         <text x="0" y="-2.110664129" class="f0">layers</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP16">
+        <path d="M325.377349854,24.961864471 L348.55166626,24.961864471 L348.55166626,86.241531372 L325.377349854,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP16)">
+       <g>
+        <g transform="matrix(1,0,0,1,328.655609131,60.810569763)">
+         <text x="0" y="-2.110664129" class="f0">ddd</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP17">
+        <path d="M349.05166626,24.961864471 L369.069396973,24.961864471 L369.069396973,86.241531372 L349.05166626,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP17)">
+       <g>
+        <g transform="matrix(1,0,0,1,352.414855957,60.810569763)">
+         <text x="0" y="-2.110664129" class="f0">ind</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP18">
+        <path d="M369.56942749,24.961864471 L384.852294922,24.961864471 L384.852294922,86.241531372 L369.56942749,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP18)">
+       <g>
+        <g transform="matrix(1,0,0,1,373.337280273,60.810569763)">
+         <text x="0" y="-2.110664129" class="f0">ty</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP19">
+        <path d="M385.352294922,24.961864471 L458.242675781,24.961864471 L458.242675781,86.241531372 L385.352294922,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP19)">
+       <g>
+        <g transform="matrix(1,0,0,1,414.879486084,60.810569763)">
+         <text x="0" y="-2.110664129" class="f0">nm</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP20">
+        <path d="M458.742706299,24.961864471 L474.02557373,24.961864471 L474.02557373,86.241531372 L458.742706299,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP20)">
+       <g>
+        <g transform="matrix(1,0,0,1,462.235778809,60.810569763)">
+         <text x="0" y="-2.110664129" class="f0">sr</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP21">
+        <path d="M474.52557373,24.961864471 L1144.008911133,24.961864471 L1144.008911133,36.8177948 L474.52557373,36.8177948 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP21)">
+       <g>
+        <g transform="matrix(1,0,0,1,804.287231445,36.098701477)">
+         <text x="0" y="-2.110664129" class="f0">ks</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP22">
+        <path d="M474.52557373,37.3177948 L528.476501465,37.3177948 L528.476501465,49.173728943 L474.52557373,49.173728943 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP22)">
+       <g>
+        <g transform="matrix(1,0,0,1,498.731414795,48.45463562)">
+         <text x="0" y="-2.110664129" class="f0">o</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP23">
+        <path d="M474.52557373,49.673728943 L486.651885986,49.673728943 L486.651885986,86.241531372 L474.52557373,86.241531372 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP23)">
+       <g>
+        <g transform="matrix(1,0,0,1,477.819091797,73.166503906)">
+         <text x="0" y="-2.110664129" class="f0">a</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP24">
+        <path d="M0.25,86.741523743 L35.261482239,86.741523743 L35.261482239,98.597457886 L0.25,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP24)">
+       <g>
+        <g transform="matrix(1,0,0,1,1.052192092,97.878364563)">
+         <text x="1" y="-2.110664129" class="f0">5.12.2</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP25">
+        <path d="M35.761482239,86.741523743 L53.41179657,86.741523743 L53.41179657,98.597457886 L35.761482239,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP25)">
+       <g>
+        <g transform="matrix(1,0,0,1,41.583240509,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">60</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP26">
+        <path d="M53.91179657,86.741523743 L68.405532837,86.741523743 L68.405532837,98.597457886 L53.91179657,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP26)">
+       <g>
+        <g transform="matrix(1,0,0,1,62.116256714,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">0</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP27">
+        <path d="M68.905532837,86.741523743 L92.079856873,86.741523743 L92.079856873,98.597457886 L68.905532837,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP27)">
+       <g>
+        <g transform="matrix(1,0,0,1,74.712020874,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">180</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP28">
+        <path d="M92.579856873,86.741523743 L115.754180908,86.741523743 L115.754180908,98.597457886 L92.579856873,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP28)">
+       <g>
+        <g transform="matrix(1,0,0,1,98.38634491,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">600</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP29">
+        <path d="M116.254180908,86.741523743 L139.428497314,86.741523743 L139.428497314,98.597457886 L116.254180908,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP29)">
+       <g>
+        <g transform="matrix(1,0,0,1,122.060668945,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">600</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP30">
+        <path d="M139.928497314,86.741523743 L178.885696411,86.741523743 L178.885696411,98.597457886 L139.928497314,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP30)">
+       <g>
+        <g transform="matrix(1,0,0,1,140.730682373,97.878364563)">
+         <text x="1" y="-2.110664129" class="f0">Search</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP31">
+        <path d="M179.385696411,86.741523743 L202.560012817,86.741523743 L202.560012817,98.597457886 L179.385696411,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP31)">
+       <g>
+        <g transform="matrix(1,0,0,1,196.270736694,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">0</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP32">
+        <path d="M203.060028076,86.741523743 L245.96295166,86.741523743 L245.96295166,98.597457886 L203.060028076,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP32)">
+       <g>
+        <g transform="matrix(1,0,0,1,203.862213135,97.878364563)">
+         <text x="1" y="-2.110664129" class="f0">comp_0</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP33">
+        <path d="M246.46295166,86.741523743 L306.727050781,86.741523743 L306.727050781,98.597457886 L246.46295166,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP33)">
+       <g>
+        <g transform="matrix(1,0,0,1,247.265136719,97.878364563)">
+         <text x="1" y="-2.110664129" class="f0">People</text>
+         <text x="32.013145447" y="-2.110664129" class="f0"> </text>
+         <text x="34.780353546" y="-2.110664129" class="f0">Icon</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP34">
+        <path d="M307.227050781,86.741523743 L324.877380371,86.741523743 L324.877380371,98.597457886 L307.227050781,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP34)">
+       <g>
+        <g transform="matrix(1,0,0,1,313.048797607,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">60</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP35">
+        <path d="M325.377349854,86.741523743 L348.55166626,86.741523743 L348.55166626,98.597457886 L325.377349854,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP35)">
+       <g>
+        <g transform="matrix(1,0,0,1,342.262390137,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">0</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP36">
+        <path d="M349.05166626,86.741523743 L369.069396973,86.741523743 L369.069396973,98.597457886 L349.05166626,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP36)">
+       <g>
+        <g transform="matrix(1,0,0,1,362.78012085,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">1</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP37">
+        <path d="M369.56942749,86.741523743 L384.852294922,86.741523743 L384.852294922,98.597457886 L369.56942749,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP37)">
+       <g>
+        <g transform="matrix(1,0,0,1,378.563018799,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">4</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP38">
+        <path d="M385.352294922,86.741523743 L458.242675781,86.741523743 L458.242675781,98.597457886 L385.352294922,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP38)">
+       <g>
+        <g transform="matrix(1,0,0,1,386.15447998,97.878364563)">
+         <text x="1" y="-2.110664129" class="f0">Shape</text>
+         <text x="29.800352097" y="-2.110664129" class="f0"> </text>
+         <text x="32.567558289" y="-2.110664129" class="f0">Layer</text>
+         <text x="57.482147217" y="-2.110664129" class="f0"> </text>
+         <text x="60.249355316" y="-2.110664129" class="f0">3</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP39">
+        <path d="M458.742706299,86.741523743 L474.02557373,86.741523743 L474.02557373,98.597457886 L458.742706299,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP39)">
+       <g>
+        <g transform="matrix(1,0,0,1,467.736297607,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">1</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP40">
+        <path d="M474.52557373,86.741523743 L486.651885986,86.741523743 L486.651885986,98.597457886 L474.52557373,98.597457886 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP40)">
+       <g>
+        <g transform="matrix(1,0,0,1,480.362609863,97.878364563)">
+         <text x="-1" y="-2.110664129" class="f0">0</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP41">
+        <path d="M325.377349854,383.283905029 L348.55166626,383.283905029 L348.55166626,395.139831543 L325.377349854,395.139831543 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP41)">
+       <g>
+        <g transform="matrix(1,0,0,1,342.262390137,394.42074585)">
+         <text x="-1" y="-2.110664129" class="f0">0</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP42">
+        <path d="M349.05166626,383.283905029 L369.069396973,383.283905029 L369.069396973,395.139831543 L349.05166626,395.139831543 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP42)">
+       <g>
+        <g transform="matrix(1,0,0,1,362.78012085,394.42074585)">
+         <text x="-1" y="-2.110664129" class="f0">2</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP43">
+        <path d="M369.56942749,383.283905029 L384.852294922,383.283905029 L384.852294922,395.139831543 L369.56942749,395.139831543 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP43)">
+       <g>
+        <g transform="matrix(1,0,0,1,378.563018799,394.42074585)">
+         <text x="-1" y="-2.110664129" class="f0">4</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP44">
+        <path d="M385.352294922,383.283905029 L458.242675781,383.283905029 L458.242675781,395.139831543 L385.352294922,395.139831543 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP44)">
+       <g>
+        <g transform="matrix(1,0,0,1,386.15447998,394.42074585)">
+         <text x="1" y="-2.110664129" class="f0">Shape</text>
+         <text x="29.800352097" y="-2.110664129" class="f0"> </text>
+         <text x="32.567558289" y="-2.110664129" class="f0">Layer</text>
+         <text x="57.482147217" y="-2.110664129" class="f0"> </text>
+         <text x="60.249355316" y="-2.110664129" class="f0">2</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP45">
+        <path d="M458.742706299,383.283905029 L474.02557373,383.283905029 L474.02557373,395.139831543 L458.742706299,395.139831543 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP45)">
+       <g>
+        <g transform="matrix(1,0,0,1,467.736297607,394.42074585)">
+         <text x="-1" y="-2.110664129" class="f0">1</text>
+        </g>
+       </g>
+      </g>
+      <defs>
+       <clipPath id="CLIP46">
+        <path d="M474.52557373,383.283905029 L486.651885986,383.283905029 L486.651885986,395.139831543 L474.52557373,395.139831543 Z "/>
+       </clipPath>
+      </defs>
+      <g clip-path="url(#CLIP46)">
+       <g>
+        <g transform="matrix(1,0,0,1,480.362609863,394.42074585)">
+         <text x="-1" y="-2.110664129" class="f0">0</text>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+    <defs>
+     <clipPath id="CLIP47">
+      <path d="M-0.5,-0.5 L487.5,-0.5 L487.5,643.5 L-0.5,643.5 Z "/>
+     </clipPath>
+    </defs>
+    <g clip-path="url(#CLIP47)">
+     <g/>
+    </g>
+   </g>
+   <g/>
+   <g/>
+   <g/>
+   <g>
+    <g>
+     <g/>
+     <g shape-rendering="crispEdges"/>
+     <g/>
+    </g>
+    <g>
+     <g/>
+    </g>
+    <g>
+     <g/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs/>
+ <defs>
+  <style type="text/css">.f0 { font-family: Arial; font-size: 9.96px; fill: rgb(0, 0, 0); }</style>
+ </defs>
+</svg>

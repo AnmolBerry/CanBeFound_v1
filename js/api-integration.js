@@ -1,0 +1,446 @@
+// CanBeFound.com - API Integration for Frontend
+
+// Initialize API integration
+document.addEventListener('DOMContentLoaded', function() {
+  initializeAPIIntegration();
+});
+
+// Initialize API integration
+function initializeAPIIntegration() {
+  // Override existing functions to use real API
+  overrideFormSubmissions();
+  overrideDataLoading();
+  overrideAuthenticationFunctions();
+  
+  console.log('API integration initialized');
+}
+
+// Override form submissions to use real API
+function overrideFormSubmissions() {
+  // Lost item form
+  const lostItemForm = document.getElementById('lostItemForm');
+  if (lostItemForm) {
+    lostItemForm.addEventListener('submit', handleLostItemSubmission);
+  }
+
+  // Found item form
+  const foundItemForm = document.getElementById('foundItemForm');
+  if (foundItemForm) {
+    foundItemForm.addEventListener('submit', handleFoundItemSubmission);
+  }
+
+  // Contact form
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', handleContactFormSubmission);
+  }
+}
+
+// Handle lost item form submission
+async function handleLostItemSubmission(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  
+  // Show loading state
+  submitBtn.textContent = 'Submitting...';
+  submitBtn.disabled = true;
+  
+  try {
+    // Collect form data
+    const formData = new FormData(form);
+    const data = {};
+    
+    for (let [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+    
+    // Submit to API
+    const result = await window.API.submitLostItem(data);
+    
+    if (result.success) {
+      // Show success message
+      showSuccessMessage('Lost item report submitted successfully!');
+      
+      // Reset form after delay
+      setTimeout(() => {
+        form.reset();
+        if (window.FormManager) {
+          window.FormManager.goToStep(1);
+        }
+      }, 3000);
+    }
+    
+  } catch (error) {
+    console.error('Failed to submit lost item:', error);
+    showErrorMessage('Failed to submit report. Please try again.');
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }
+}
+
+// Handle found item form submission
+async function handleFoundItemSubmission(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  
+  // Show loading state
+  submitBtn.textContent = 'Submitting...';
+  submitBtn.disabled = true;
+  
+  try {
+    // Collect form data
+    const formData = new FormData(form);
+    const data = {};
+    
+    for (let [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+    
+    // Submit to API
+    const result = await window.API.submitFoundItem(data);
+    
+    if (result.success) {
+      // Show success message
+      showSuccessMessage('Found item report submitted successfully!');
+      
+      // Redirect after delay
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 2000);
+    }
+    
+  } catch (error) {
+    console.error('Failed to submit found item:', error);
+    showErrorMessage('Failed to submit report. Please try again.');
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }
+}
+
+// Handle contact form submission
+async function handleContactFormSubmission(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const originalText = submitBtn.textContent;
+  
+  // Show loading state
+  submitBtn.textContent = 'Sending...';
+  submitBtn.disabled = true;
+  
+  try {
+    // Collect form data
+    const formData = new FormData(form);
+    const data = {};
+    
+    for (let [key, value] of formData.entries()) {
+      data[key] = value;
+    }
+    
+    // Submit to API
+    const result = await window.API.submitContactMessage(data);
+    
+    if (result.success) {
+      // Show success message
+      if (window.CanBeFound) {
+        window.CanBeFound.showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
+      }
+      
+      // Reset form
+      form.reset();
+    }
+    
+  } catch (error) {
+    console.error('Failed to submit contact message:', error);
+    showErrorMessage('Failed to send message. Please try again.');
+  } finally {
+    submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
+  }
+}
+
+// Override data loading functions
+function overrideDataLoading() {
+  // Override loadRecentItems
+  if (typeof loadRecentItems === 'function') {
+    window.originalLoadRecentItems = loadRecentItems;
+  }
+  window.loadRecentItems = loadRecentItemsFromAPI;
+  
+  // Override search functionality
+  if (window.SearchManager) {
+    window.SearchManager.performSearch = performRealSearch;
+  }
+  
+  // Override stats loading
+  if (typeof initializeStatsCounter === 'function') {
+    window.originalInitializeStatsCounter = initializeStatsCounter;
+  }
+  window.initializeStatsCounter = loadRealStats;
+}
+
+// Load recent items from API
+async function loadRecentItemsFromAPI() {
+  const container = document.getElementById('recentItemsGrid');
+  if (!container) return;
+  
+  try {
+    const items = await window.API.getRecentItems(8);
+    
+    // Filter for approved items only
+    const approvedItems = items.filter(item => item.approved !== false);
+    
+    if (approvedItems && approvedItems.length > 0) {
+      container.innerHTML = approvedItems.map(item => createItemCard(item)).join('');
+    } else {
+      container.innerHTML = '<p class="no-items">No recent approved items found.</p>';
+    }
+    
+  } catch (error) {
+    console.error('Failed to load recent items:', error);
+    container.innerHTML = '<p class="error-message">Failed to load recent items.</p>';
+  }
+}
+
+// Perform real search
+async function performRealSearch() {
+  const searchInput = document.getElementById('searchInput');
+  if (searchInput) {
+    searchState.query = searchInput.value.trim();
+  }
+  
+  // Update filters
+  updateFilters();
+  
+  // Show loading state
+  showLoadingState();
+  
+  try {
+    // Get filter values
+    const filters = {
+      search: searchState.query,
+      category: searchState.filters.category,
+      location: searchState.filters.location,
+      status: searchState.filters.status,
+      limit: searchState.itemsPerPage,
+      offset: (searchState.currentPage - 1) * searchState.itemsPerPage,
+      approved: true // Only show approved items
+    };
+    
+    // Remove empty filters
+    Object.keys(filters).forEach(key => {
+      if (!filters[key] && key !== 'approved') {
+        delete filters[key];
+      }
+    });
+    
+    const items = await window.API.getAllItems(filters);
+    
+    // Filter for approved items only (client-side backup)
+    const approvedItems = items.filter(item => item.approved !== false);
+    
+    // Sort items locally
+    const sortedItems = sortItems(approvedItems);
+    
+    // Display items
+    displayItems(sortedItems);
+    updateResultsInfo(sortedItems.length);
+    
+    // Update URL
+    updateURL();
+    
+  } catch (error) {
+    console.error('Search failed:', error);
+    showErrorMessage('Search failed. Please try again.');
+    
+    // Hide loading state
+    const loadingSpinner = document.getElementById('loadingSpinner');
+    if (loadingSpinner) loadingSpinner.style.display = 'none';
+  }
+}
+
+// Load real stats
+async function loadRealStats() {
+  try {
+    const stats = await window.API.getPlatformStats();
+    
+    // Update stat numbers
+    const statElements = {
+      'totalActiveItems': stats.totalActiveItems,
+      'successfullyReturned': stats.successfullyReturned,
+      'activeLostReports': stats.activeLostReports,
+      'foundItemsAwaiting': stats.foundItemsAwaiting,
+    };
+    
+    Object.entries(statElements).forEach(([key, value]) => {
+      const element = document.querySelector(`[data-stat="${key}"]`);
+      if (element) {
+        animateCounterToValue(element, value);
+      }
+    });
+    
+    // Fallback to data-count attributes
+    const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+    statNumbers.forEach((stat, index) => {
+      const values = Object.values(statElements);
+      if (values[index] !== undefined) {
+        stat.setAttribute('data-count', values[index]);
+        animateCounterToValue(stat, values[index]);
+      }
+    });
+    
+  } catch (error) {
+    console.error('Failed to load stats:', error);
+    // Fallback to original function if available
+    if (window.originalInitializeStatsCounter) {
+      window.originalInitializeStatsCounter();
+    }
+  }
+}
+
+// Animate counter to specific value
+function animateCounterToValue(element, targetValue) {
+  const duration = 2000;
+  const step = targetValue / (duration / 16);
+  let current = 0;
+  
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= targetValue) {
+      current = targetValue;
+      clearInterval(timer);
+    }
+    element.textContent = Math.floor(current);
+  }, 16);
+}
+
+// Override authentication functions
+function overrideAuthenticationFunctions() {
+  // Auth functions are now handled by auth.js
+  console.log('Authentication functions delegated to auth.js');
+}
+
+// Load real auction data from API
+async function loadRealAuctionData() {
+    try {
+        const auctions = await window.API.getAuctions();
+        
+        // Transform API data to match expected format
+        auctionState.auctions = auctions.map(auction => ({
+            id: auction.id,
+            title: auction.title || auction.item?.itemName || 'Untitled Item',
+            category: auction.item?.category || 'other',
+            description: auction.description || auction.item?.description || '',
+            image: auction.item?.photo?.url || 'https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=400',
+            startingPrice: auction.startingPrice / 100, // Convert cents to dollars
+            currentBid: (auction.currentBid || auction.startingPrice) / 100,
+            bidCount: auction.bidCount || 0,
+            endTime: new Date(auction.endTime),
+            status: auction.status === 'active' ? 'active' : auction.status,
+            location: auction.item?.location || 'Unknown'
+        }));
+        
+        // Display auctions
+        filterAndDisplayAuctions();
+        
+    } catch (error) {
+        console.error('Failed to load auction data:', error);
+        
+        // Fallback to mock data
+        generateMockAuctions();
+        filterAndDisplayAuctions();
+        
+        if (window.CanBeFound) {
+            window.CanBeFound.showNotification('Using demo auction data', 'info');
+        }
+    }
+}
+
+// Utility functions
+function showSuccessMessage(message) {
+  if (window.CanBeFound) {
+    window.CanBeFound.showNotification(message, 'success');
+  }
+}
+
+function showErrorMessage(message) {
+  if (window.CanBeFound) {
+    window.CanBeFound.showNotification(message, 'error');
+  }
+}
+
+function showLoginError(message) {
+  // Remove existing error
+  const existingError = document.querySelector('.login-error');
+  if (existingError) {
+    existingError.remove();
+  }
+  
+  // Create error element
+  const errorDiv = document.createElement('div');
+  errorDiv.className = 'login-error';
+  errorDiv.style.cssText = `
+    color: var(--error-color);
+    background: rgba(220, 53, 69, 0.1);
+    border: 1px solid rgba(220, 53, 69, 0.3);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    text-align: center;
+  `;
+  errorDiv.textContent = message;
+  
+  // Insert error
+  const loginForm = document.getElementById('loginForm');
+  const firstFormGroup = loginForm.querySelector('.form-group');
+  loginForm.insertBefore(errorDiv, firstFormGroup);
+  
+  // Auto remove after 5 seconds
+  setTimeout(() => {
+    if (errorDiv.parentElement) {
+      errorDiv.remove();
+    }
+  }, 5000);
+}
+
+// Initialize real data loading on page load
+if (document.getElementById('recentItemsGrid')) {
+  loadRecentItemsFromAPI();
+}
+
+if (document.querySelector('.stat-number[data-count]')) {
+  loadRealStats();
+}
+
+// Initialize auction data loading
+if (document.getElementById('auctionsGrid')) {
+  setTimeout(() => {
+    if (window.AuctionManager) {
+      window.AuctionManager.loadAuctionData();
+    }
+  }, 1000);
+}
+
+// Initialize search data loading
+if (document.getElementById('itemsContainer')) {
+  setTimeout(() => {
+    if (window.SearchManager) {
+      window.SearchManager.performRealSearch();
+    }
+  }, 1000);
+}
+
+// Check authentication status on page load
+if (window.Auth) {
+  window.Auth.checkAuthStatus();
+}
