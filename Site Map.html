@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sitemap - CanBeFound (Static Mockup)</title>
+<style>
+  :root{
+    --blue:#1e73e8;
+    --purple:#a86fe6;
+    --content-blue:#2b7be6;
+    --teal:#1fc2a6;
+    --border:#2476d6;
+    --box-radius:12px;
+    --gap:26px;
+    --font-sans: "Segoe UI", Roboto, Arial, sans-serif;
+  }
+
+  html,body{height:100%; margin:0; padding:0; background:#ffffff; font-family:var(--font-sans);}
+  .stage{
+    max-width:1600px;
+    margin:28px auto 80px;
+    padding:10px 24px;
+    position:relative;
+  }
+
+  /* Top main box */
+  .top-wrap{display:flex; justify-content:center; margin-top:6px;}
+  .box{
+    border:2px solid var(--border);
+    border-radius:14px;
+    width:170px;
+    min-height:56px;
+    background:#fff;
+    position:relative;
+    box-sizing:border-box;
+    padding:10px;
+    text-align:center;
+  }
+  .box .dots{
+    position:absolute;
+    left:10px; top:8px;
+    color:var(--blue);
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+  }
+  .box .title{
+    color:var(--blue);
+    font-weight:700;
+    font-size:15px;
+    margin-top:4px;
+  }
+
+  /* vertical connector from top to second level */
+  .vline-top{
+    width:2px; height:26px; background:var(--blue);
+    margin:6px auto 0;
+    border-radius:2px;
+  }
+
+  /* Center card (second level) */
+  .center-wrap{display:flex; justify-content:center; margin-top:8px; position:relative;}
+  .center-card{
+    width:220px;
+    border:2px solid var(--border);
+    border-radius:12px;
+    padding:10px;
+    position:relative;
+    background:#fff;
+    box-sizing:border-box;
+    text-align:left;
+  }
+  .center-card .dots{left:12px; top:8px;}
+  .center-card .center-title{color:var(--blue); font-weight:700; font-size:14px; text-align:center; margin-bottom:8px;}
+  .inner-block{
+    border-radius:8px;
+    padding:10px;
+    color:#fff;
+    font-size:12px;
+    margin-bottom:8px;
+    line-height:1.2;
+  }
+  .inner-purple{background:var(--purple);}
+  .inner-blue{background:var(--content-blue);}
+  .inner-green{background:var(--teal); color:#fff; font-weight:600; text-align:left; padding:8px 10px;}
+
+  /* connector from center down to horizontal bar */
+  .center-card::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-56px; /* gap to horizontal bar */
+    width:2px;
+    height:56px;
+    background:var(--blue);
+    border-radius:2px;
+  }
+
+  /* THE HORIZONTAL CONNECTOR BAR (spans below center card) */
+  .hbar{
+    position:relative;
+    height:0;
+    margin-bottom:40px;
+  }
+  .hbar .line{
+    width:100%;
+    height:2px;
+    background:var(--blue);
+    position:absolute;
+    left:0; top:0;
+  }
+
+  /* bottom row */
+  .row{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    align-items:flex-start;
+    margin-top:88px; /* spacing to match connectors */
+    position:relative;
+    flex-wrap:wrap;
+  }
+
+  /* Each bottom node */
+  .node{
+    width:210px;
+    border:2px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+    background:#fff;
+    position:relative;
+    box-sizing:border-box;
+  }
+  .node .dots{ left:10px; top:10px; }
+  .node .node-title{
+    background:transparent;
+    padding:8px 10px;
+    font-weight:700;
+    color:var(--blue);
+    text-align:center;
+    font-size:14px;
+  }
+  .node .sub-purple{
+    background:var(--purple);
+    color:#fff;
+    padding:10px;
+    font-size:13px;
+    line-height:1.2;
+  }
+  .node .sub-blue{
+    background:var(--content-blue);
+    color:#fff;
+    padding:12px;
+    font-size:12px;
+    line-height:1.25;
+    min-height:84px;
+    text-align:left;
+  }
+  .node .sub-teal{
+    background:var(--teal);
+    color:#fff;
+    padding:9px 10px;
+    font-size:12px;
+    font-weight:600;
+    text-align:left;
+  }
+
+  /* small vertical connector from line to top of each node */
+  .node::before{
+    content:"";
+    position:absolute;
+    top:-70px;
+    left:50%;
+    transform:translateX(-50%);
+    width:2px;
+    height:70px;
+    background:transparent; /* invisible until hbar placed behind */
+  }
+
+  /* To visually connect node top to the horizontal line we position a small upward connector
+     by using an absolutely positioned pseudo element on the row and an inner small stroke at the node top */
+  .row .connector-top{
+    position:absolute;
+    top:-64px;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    padding:0 10px;
+    pointer-events:none;
+  }
+  .row .connector-top .stick{
+    width:2px;
+    height:64px;
+    background:var(--blue);
+    margin:0 auto;
+    border-radius:2px;
+  }
+
+  /* Responsive: shrink widths on small screens */
+  @media(max-width:1100px){
+    .row{ gap:18px; }
+    .center-card{ width:240px; }
+  }
+  @media(max-width:860px){
+    .center-card::after{ bottom:-40px; height:40px; }
+    .row{ margin-top:64px; gap:14px; }
+    .node{ width:220px; }
+    .row .connector-top .stick{ height:48px; }
+    .node::before{ top:-48px; height:48px; }
+  }
+  @media(max-width:640px){
+    .top-wrap, .center-wrap { padding:0 10px; }
+    .row { flex-direction:column; align-items:center; margin-top:34px; }
+    .row .connector-top{ display:none; }
+    .center-card::after{ display:none; }
+    .node::before{ display:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+
+    <!-- TOP MAIN -->
+    <div class="top-wrap">
+      <div class="box">
+        <div class="dots">•••</div>
+        <div class="title">Main page</div>
+      </div>
+    </div>
+
+    <div class="vline-top" aria-hidden="true"></div>
+
+    <!-- CENTER CARD -->
+    <div class="center-wrap">
+      <div class="center-card" aria-label="CanBeFound center card">
+        <div class="dots">•••</div>
+        <div class="center-title">CanBeFound_v1</div>
+
+        <!-- inner colored blocks (exact texts) -->
+        <div class="inner-block inner-purple">
+          CanBeFound - College Lost &amp; Found
+        </div>
+
+        <div class="inner-block inner-blue" style="font-size:12px; line-height:1.25;">
+          CanBeFound - College Lost and Found Platform. Report lost items, find belongings, and participate in auctions for unclaimed items.
+        </div>
+
+        <div class="inner-block inner-green">
+          Lost Something?<br>We'll Help You Find It!
+        </div>
+      </div>
+    </div>
+
+    <!-- horizontal connector under center -->
+    <div class="hbar" aria-hidden="true">
+      <div class="line"></div>
+    </div>
+
+    <!-- BOTTOM ROW: nodes AND the vertical connectors -->
+    <div class="row" role="list">
+
+      <!-- THE connector-sticks row (exactly matches number of nodes) -->
+      <div class="connector-top" aria-hidden="true">
+        <!-- 9 sticks, matching the 9 nodes below; blank items are spaced by flex -->
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+      </div>
+
+      <!-- INDEX -->
+      <div class="node" role="listitem" aria-label="Index">
+        <div class="dots">•••</div>
+        <div class="node-title">Index</div>
+
+        <div class="sub-purple">CanBeFound - College Lost &amp; Found</div>
+
+        <div class="sub-blue">
+          CanBeFound - College Lost and Found Platform. Report lost items, find belongings, and participate in auctions for unclaimed items.
+        </div>
+
+        <div class="sub-teal">Lost Something? We'll Help You Find It!</div>
+      </div>
+
+      <!-- Report found -->
+      <div class="node" role="listitem" aria-label="Report found">
+        <div class="dots">•••</div>
+        <div class="node-title">Report found</div>
+
+        <div class="sub-purple">Report Found Item - CanBeFound.com</div>
+
+        <div class="sub-blue">
+          Report a found item on CanBeFound.com - College Lost and Found Platform
+        </div>
+
+        <div class="sub-teal">Report Found Item</div>
+      </div>
+
+      <!-- Report lost -->
+      <div class="node" role="listitem" aria-label="Report lost">
+        <div class="dots">•••</div>
+        <div class="node-title">Report lost</div>
+
+        <div class="sub-purple">Report Lost Item - CanBeFound.com</div>
+
+        <div class="sub-blue">
+          Report a lost item on CanBeFound.com - College Lost and Found Platform
+        </div>
+
+        <div class="sub-teal">Report Lost Item</div>
+      </div>
+
+      <!-- Search -->
+      <div class="node" role="listitem" aria-label="Search">
+        <div class="dots">•••</div>
+        <div class="node-title">Search</div>
+
+        <div class="sub-purple">Search Items - CanBeFound.com</div>
+
+        <div class="sub-blue">
+          Search for lost and found items on CanBeFound.com - College Lost and Found Platform
+        </div>
+
+        <div class="sub-teal">Search Items</div>
+      </div>
+
+      <!-- Auctions -->
+      <div class="node" role="listitem" aria-label="Auctions">
+        <div class="dots">•••</div>
+        <div class="node-title">Auctions</div>
+
+        <div class="sub-purple">Auctions - CanBeFound.com</div>
+
+        <div class="sub-blue">
+          Auction Items - CanBeFound.com College Lost and Found Platform
+        </div>
+
+        <div class="sub-teal">Item Auctions</div>
+      </div>
+
+      <!-- Help -->
+      <div class="node" role="listitem" aria-label="Help">
+        <div class="dots">•••</div>
+        <div class="node-title">Help</div>
+
+        <div class="sub-purple">Help &amp; FAQ - CanBeFound.com</div>
+
+        <div class="sub-blue">
+          Help &amp; FAQ - CanBeFound.com College Lost and Found Platform
+        </div>
+
+        <div class="sub-teal">Help &amp; Support</div>
+      </div>
+
+      <!-- Aboutus3 -->
+      <div class="node" role="listitem" aria-label="Aboutus3">
+        <div class="dots">•••</div>
+        <div class="node-title">Aboutus3</div>
+
+        <div class="sub-purple">About Us - Lost &amp; Found</div>
+
+        <div class="sub-blue">
+          Contact the Lost and Found team at our campus for help with lost or found items.
+        </div>
+
+        <div class="sub-teal">About Us</div>
+      </div>
+
+      <!-- Contacus (Contactus) -->
+      <div class="node" role="listitem" aria-label="Contacus">
+        <div class="dots">•••</div>
+        <div class="node-title">Contacus</div>
+
+        <div class="sub-purple">Contact Us</div>
+
+        <div class="sub-blue">
+          Contact the Lost and Found team at our campus for help with lost or found items.
+        </div>
+
+        <div class="sub-teal">Contact Us</div>
+      </div>
+
+      <!-- Privacy -->
+      <div class="node" role="listitem" aria-label="Privacy">
+        <div class="dots">•••</div>
+        <div class="node-title">Privacy</div>
+
+        <div class="sub-purple">Privacy Policy &amp; Terms - CanBeFound.com</div>
+
+        <div class="sub-blue">
+          Privacy Policy &amp; Terms of Service - CanBeFound.com
+        </div>
+
+        <div class="sub-teal">Privacy Policy</div>
+      </div>
+
+    </div> <!-- end row -->
+  </div> <!-- end stage -->
+</body>
+</html>
