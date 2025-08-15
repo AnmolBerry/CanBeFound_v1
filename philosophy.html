@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <title>Philosophy - CanBeFound.com</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/philosophy.css">
     <link rel="stylesheet" href="styles/responsive.css">
 </head>
+
 <body>
     <!-- Password Protection Overlay -->
     <div class="password-overlay" id="passwordOverlay">
@@ -24,8 +28,8 @@
             <form class="password-form" id="passwordForm">
                 <div class="form-group">
                     <label for="accessPassword" class="form-label">Access Password</label>
-                    <input type="password" id="accessPassword" name="password" class="form-input" required 
-                           placeholder="Enter access password">
+                    <input type="password" id="accessPassword" name="password" class="form-input" required
+                        placeholder="Enter access password">
                     <div class="form-error" id="passwordError"></div>
                 </div>
                 <button type="submit" class="btn btn-primary btn-full">Access Content</button>
@@ -49,7 +53,7 @@
                     <span class="btn-icon">A+</span>
                     <span class="btn-text">Larger Text</span>
                 </button>
-                
+
             </div>
         </div>
 
@@ -61,13 +65,13 @@
                         <span class="logo-text">Can</span><span class="logo-domain">BeFound</span>
                     </a>
                 </div>
-                
+
                 <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
                     <span class="hamburger"></span>
                     <span class="hamburger"></span>
                     <span class="hamburger"></span>
                 </button>
-                
+
                 <div class="nav-menu" id="navMenu">
                     <ul class="nav-links">
                         <li><a href="index.html" class="nav-link">Home</a></li>
@@ -101,302 +105,791 @@
                 </div>
             </section>
 
-            <!-- Brand Philosophy -->
-            <section class="philosophy-section">
+            <section class="project-requirements">
+                <h1>WBD Project Requirements</h1>
+
                 <div class="container">
-                    <div class="philosophy-grid">
-                        <div class="philosophy-card primary">
-                            <div class="card-header">                            
-                                <h2 class="card-title">Problem Statement</h2>
+                    <div class="column">
+                        <h2>📋 Project Setup &amp; Documentation</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Table with team number, member names, roll
+                                        numbers</strong></span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable" selected="">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Stakeholders listed</strong></span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done">Done</option>
+                                        <option value="to-be-done" selected="">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Submission</strong>: Complete &amp; submit before
+                                    deadline</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable" >Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2>🏗️ Core Technical Requirements</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Stack</strong>: Use HTML, CSS, JavaScript</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable" >Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Page Count</strong>: 5–6 main pages</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Semantic HTML</strong>: Use &lt;header&gt;,
+                                    &lt;footer&gt;, &lt;nav&gt;, etc.</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Central CSS</strong>: Single global stylesheet</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Framework Use</strong>: Bootstrap (or approved
+                                    alternative)</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable" selected="">Not applicable</option>
+                                        <option value="done" >Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Accessible Forms &amp; Validation</strong></span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2>🔒 Security &amp; Configuration Files</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Security.txt</strong>: At site root</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                    public link: <a href="https://anmolberry.github.io/CanBeFound_v1/security.txt">Security.txt</a>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Robots.txt</strong>: At site root</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                    public link: <a href="https://anmolberry.github.io/CanBeFound_v1/robots.txt">Robots.txt</a>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>HTTPS (SSL)</strong>: Serve site securely</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <h2>🔐 Hidden/Instructors-only Page</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Access Restriction</strong>: Instructor only</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Handwritten HTML</strong>: No auto-generation</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Team Table</strong>: Members &amp; roles listed</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Testimonial</strong>: Added</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done">Done</option>
+                                        <option value="to-be-done" selected="">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Consumer Profile</strong>: Who are you catering
+                                    to?</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done">Done</option>
+                                        <option value="to-be-done" selected="">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li><span class="task-text"><strong>Design Philosophy</strong>: Written in the Hidden
+                                    page</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Philosophy of logo</strong>: Documented reasoning behind
+                                    logo design</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li><span class="task-text"><strong>Survey</strong>: Survey for design</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h2>🎨 Design &amp; User Experience</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Consistent Design</strong>: Uniform look &amp;
+                                    documented method</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Mobile Responsive</strong>: Works on phones &amp;
+                                    tablets</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Favicon</strong>: Add favicon</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Icons on Links</strong>: Icon for every
+                                    navigation/action link</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2>♿ Accessibility &amp; Performance</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Accessibility</strong>: Screen-readable &amp;
+                                    accessible</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Performance</strong>: Optimized for fast
+                                    rendering</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Images</strong>: Optimized image on every page</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Image Optimization</strong>: Documented</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Figure Labelling</strong>: "Lower is better" / "Higher
+                                    is better"</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h2>🔍 SEO &amp; Marketing</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>SEO Keywords</strong>: Selected with reasoning</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>SEO Ranking Check</strong>: Recorded</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Sitemap</strong>: HTML or XML created</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                    sitemap link: <a href="https://anmolberry.github.io/CanBeFound_v1/Site Map.html" target="_blank">Sitemap</a>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Social Buttons</strong>: Implemented</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable" selected="">Not applicable</option>
+                                        <option value="done">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <h2>🚀 Hosting &amp; Deployment</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Public Availability</strong>: Site &amp; code publicly
+                                    accessible</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Public URL</strong>: For robots.txt provided</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                    public link: <a href="https://anmolberry.github.io/CanBeFound_v1/robots.txt" target="_blank">Robots.txt</a>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>Ngrok Hosting</strong>: Temporary testing via
+                                    ngrok</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable" selected="">Not applicable</option>
+                                        <option value="done">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                        <option value="attached">Attached</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <h2>🎯 Special Features</h2>
+                        <ul>
+                            <li><span class="task-text"><strong>Google Map</strong>: On "About Us" page</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li><span class="task-text"><strong>LinkedIn Profile Link</strong>: Optional</span>
+                                <div class="status-dropdown">
+                                    <select>
+                                        <option value="not-applicable">Not applicable</option>
+                                        <option value="done" selected="">Done</option>
+                                        <option value="to-be-done">To be done</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </section>
+
+                <!-- Brand Philosophy -->
+                <section class="philosophy-section">
+                    <div class="container">
+                        <div class="philosophy-grid">
+                            <div class="philosophy-card primary">
+                                <div class="card-header">
+                                    <h2 class="card-title">Problem Statement</h2>
+                                </div>
+                                <div class="card-content">
+                                    <p class="philosophy-text">
+                                        It’s a common sight on any college campus. Someone loses a jacket, an ID card,
+                                        or a charger, and the search turns into a chain of WhatsApp messages, asking
+                                        friends, or scanning notice boards. This process is slow, messy, and often leads
+                                        nowhere. We noticed that at our own college, items would remain unclaimed for
+                                        days or even weeks simply because there was no central place for lost and found
+                                        information. The lack of a structured system meant even if someone had found the
+                                        item, the chances of it being returned to the right person were slim.
+                                    </p>
+                                    <div class="philosophy-details">
+                                        <h4>Core Objectives:</h4>
+                                        <ul>
+                                            <li>Eliminate the frustration of losing valuable items</li>
+                                            <li>Create a trustworthy verification system</li>
+                                            <li>Build community through helping others</li>
+                                            <li>Provide fair redistribution through auctions</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <p class="philosophy-text">
-                                    It’s a common sight on any college campus. Someone loses a jacket, an ID card, or a charger, and the search turns into a chain of WhatsApp messages, asking friends, or scanning notice boards. This process is slow, messy, and often leads nowhere. We noticed that at our own college, items would remain unclaimed for days or even weeks simply because there was no central place for lost and found information. The lack of a structured system meant even if someone had found the item, the chances of it being returned to the right person were slim.
-                                </p>
-                                <div class="philosophy-details">
-                                    <h4>Core Objectives:</h4>
-                                    <ul>
-                                        <li>Eliminate the frustration of losing valuable items</li>
-                                        <li>Create a trustworthy verification system</li>
-                                        <li>Build community through helping others</li>
-                                        <li>Provide fair redistribution through auctions</li>
-                                    </ul>
+
+                            <div class="philosophy-card secondary">
+                                <div class="card-header">
+                                    <h2 class="card-title">Our Solution</h2>
+                                </div>
+                                <div class="card-content">
+                                    <p class="philosophy-text">
+                                        To bridge this gap, we decided to build a dedicated Lost & Found website, a
+                                        single platform where students, faculty, and staff can instantly report a lost
+                                        or found item. By centralizing the process, we make it easy to browse items,
+                                        search by category, and connect the finder with the rightful owner. We also
+                                        added features like admin approval for posts, so only genuine and verified
+                                        listings appear, making the platform not just fast and accessible, but also
+                                        reliable and secure.
+                                    </p>
+                                    <div class="philosophy-details">
+                                        <h4>Future Goals:</h4>
+                                        <ul>
+                                            <li>Expand to universities nationwide</li>
+                                            <li>Integrate AI-powered item matching</li>
+                                            <li>Create a global lost & found network</li>
+                                            <li>Establish industry standards for digital L&F</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+            
 
-                        <div class="philosophy-card secondary">
-                            <div class="card-header">                                
-                                <h2 class="card-title">Our Solution</h2>
-                            </div>
-                            <div class="card-content">
-                                <p class="philosophy-text">
-                                    To bridge this gap, we decided to build a dedicated Lost & Found website, a single platform where students, faculty, and staff can instantly report a lost or found item. By centralizing the process, we make it easy to browse items, search by category, and connect the finder with the rightful owner. We also added features like admin approval for posts, so only genuine and verified listings appear, making the platform not just fast and accessible, but also reliable and secure.
+                <!-- Design Principles -->
+                <section class="design-principles">
+                    <div class="container">
+                        <h2 class="section-title">Features That Enhance Usability and Functionality</h2>
+                        <div class="principles-grid">
+                            <div class="principle-card">
+                                <h3 class="principle-title">Colour Blind Mode</h3>
+                                <p class="principle-text">
+                                    We know that traditional color schemes can make it difficult for colorblind users to
+                                    distinguish important elements. Our colorblind mode adjusts the site’s palette to
+                                    high-contrast, universally distinguishable colors, ensuring that buttons, alerts,
+                                    and categories remain clear for all users.
                                 </p>
-                                <div class="philosophy-details">
-                                    <h4>Future Goals:</h4>
-                                    <ul>
-                                        <li>Expand to universities nationwide</li>
-                                        <li>Integrate AI-powered item matching</li>
-                                        <li>Create a global lost & found network</li>
-                                        <li>Establish industry standards for digital L&F</li>
-                                    </ul>
+                            </div>
+
+                            <div class="principle-card">
+                                <h3 class="principle-title">Large Text Size Mode</h3>
+                                <p class="principle-text">
+                                    Accessibility isn’t just about colors; it’s also about readability. Large text size
+                                    mode gives users the option to enlarge all on-screen text without breaking the
+                                    design, making the site easier to use for people with visual impairments or those
+                                    browsing on smaller screens.
+                                </p>
+                            </div>
+
+                            <div class="principle-card">
+                                <h3 class="principle-title">Dark Mode</h3>
+                                <p class="principle-text">
+                                    Many people browse in low-light environments or simply prefer darker themes. Dark
+                                    mode reduces glare, minimizes eye strain during extended use, and makes the site
+                                    comfortable to navigate at any time of day.
+                                </p>
+                            </div>
+
+                            <div class="principle-card">
+                                <h3 class="principle-title">Keystone-Powered Backend</h3>
+                                <p class="principle-text">
+                                    To ensure that all these features work seamlessly and securely, we’ve built our
+                                    backend using Keystone. It allows us to manage data, user accounts, admin approvals,
+                                    and listings in a structured way. Keystone gives us both flexibility and control, so
+                                    the platform remains reliable as we grow and add more institutions in the future.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Page Speed Insights</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                        <img src="images/pagespeed1.jpg" alt="PageSpeed Insights Report 1"
+                            style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+                        <img src="images/pagespeed2.jpg" alt="PageSpeed Insights Report 2"
+                            style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+                    </div>
+                </section>
+
+                <!-- Colorblind Mode Proof Section -->
+                <section style="margin-top: 40px;">
+                    <h2>Colorblind Mode Accessibility</h2>
+                    <p>These screenshots show how our website appears to users with different types of color vision,
+                        ensuring all key information is still clear and visible.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                        <img src="images/colorblind1.jpg" alt="Website view for colorblind users - Example 1"
+                            style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+                        <img src="images/colorblind2.jpg" alt="Website view for colorblind users - Example 2"
+                            style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
+                    </div>
+                </section>
+                <!-- Color Palette -->
+                <section class="color-palette">
+                    <div class="container">
+                        <h2 class="section-title">Brand Color Palette</h2>
+                        <div class="palette-grid">
+                            <div class="color-card primary">
+                                <div class="color-swatch" style="background: #2563eb;"></div>
+                                <div class="color-info">
+                                    <h4 class="color-name">Primary Blue</h4>
+                                    <p class="color-code">#2563eb</p>
+                                    <p class="color-usage"> Chosen for its association with trust, stability, and
+                                        professionalism; it anchors the site’s main actions and brand identity.</p>
+                                </div>
+                            </div>
+
+                            <div class="color-card secondary">
+                                <div class="color-swatch" style="background: #f97316;"></div>
+                                <div class="color-info">
+                                    <h4 class="color-name">Action Orange</h4>
+                                    <p class="color-code">#f97316</p>
+                                    <p class="color-usage">Adds energy and urgency; draws attention to important
+                                        call-to-action elements like “Report” or “Search.”</p>
+                                </div>
+                            </div>
+
+                            <div class="color-card accent">
+                                <div class="color-swatch" style="background: #3b82f6;"></div>
+                                <div class="color-info">
+                                    <h4 class="color-name">Accent Blue</h4>
+                                    <p class="color-code">#3b82f6</p>
+                                    <p class="color-usage"> Used for highlights, links, and hover states; keeps
+                                        interactions visually consistent with the brand’s main blue.</p>
+                                </div>
+                            </div>
+
+                            <div class="color-card neutral">
+                                <div class="color-swatch" style="background: #f0f6ff;"></div>
+                                <div class="color-info">
+                                    <h4 class="color-name">Background</h4>
+                                    <p class="color-code">#f0f6ff</p>
+                                    <p class="color-usage">A clean, subtle shade that keeps the focus on content while
+                                        maintaining a fresh and approachable feel.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Design Principles -->
-            <section class="design-principles">
-                <div class="container">
-                    <h2 class="section-title">Features That Enhance Usability and Functionality</h2>
-                    <div class="principles-grid">
-                        <div class="principle-card">                            
-                            <h3 class="principle-title">Colour Blind Mode</h3>
-                            <p class="principle-text">
-                                We know that traditional color schemes can make it difficult for colorblind users to distinguish important elements. Our colorblind mode adjusts the site’s palette to high-contrast, universally distinguishable colors, ensuring that buttons, alerts, and categories remain clear for all users.
-                            </p>
-                        </div>
-                        
-                        <div class="principle-card">                            
-                            <h3 class="principle-title">Large Text Size Mode</h3>
-                            <p class="principle-text">
-                                Accessibility isn’t just about colors; it’s also about readability. Large text size mode gives users the option to enlarge all on-screen text without breaking the design, making the site easier to use for people with visual impairments or those browsing on smaller screens.
-                            </p>
-                        </div>
-                        
-                        <div class="principle-card">                            
-                            <h3 class="principle-title">Dark Mode</h3>
-                            <p class="principle-text">
-                                Many people browse in low-light environments or simply prefer darker themes. Dark mode reduces glare, minimizes eye strain during extended use, and makes the site comfortable to navigate at any time of day.
-                            </p>
-                        </div>
-                        
-                        <div class="principle-card">                            
-                            <h3 class="principle-title">Keystone-Powered Backend</h3>
-                            <p class="principle-text">
-                                To ensure that all these features work seamlessly and securely, we’ve built our backend using Keystone. It allows us to manage data, user accounts, admin approvals, and listings in a structured way. Keystone gives us both flexibility and control, so the platform remains reliable as we grow and add more institutions in the future.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <!-- Typography -->
+                <section class="typography-section">
+                    <div class="container">
+                        <h2 class="section-title">Typography System</h2>
+                        <div class="typography-grid">
+                            <div class="typography-card">
+                                <h3 class="typography-title">Brand Font</h3>
+                                <div class="font-sample brand-font">Montserrat</div>
+                                <p class="font-usage">Logo, brand elements, emphasis</p>
+                                <p>We chose Montserrat for our logo and brand name because it’s bold, clean, and easy to
+                                    recognize. It gives the site a professional look while still feeling modern, which
+                                    is important since our audience is mostly students and young staff.</p>
+                                <div class="font-weights">
+                                    <span class="weight-sample" style="font-weight: 400;">Regular</span>
+                                    <span class="weight-sample" style="font-weight: 600;">Semibold</span>
+                                    <span class="weight-sample" style="font-weight: 800;">Extrabold</span>
+                                </div>
+                            </div>
 
-           <section>
-                <h2>Page Speed Insights</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                                <img src="https://res.cloudinary.com/dutufhhkq/image/upload/v1754980594/pagespeed1_xuzljm.jpg" alt="PageSpeed Insights Report 1" style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
-                                <img src="https://res.cloudinary.com/dutufhhkq/image/upload/v1754980593/pagespeed2_yxkw5u.jpg" alt="PageSpeed Insights Report 2" style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
-                    </div>
-            </section>
-            
-            <!-- Colorblind Mode Proof Section -->
-            <section style="margin-top: 40px;">
-                <h2>Colorblind Mode Accessibility</h2>
-                    <p>These screenshots show how our website appears to users with different types of color vision, ensuring all key information is still clear and visible.</p>
-                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-                                <img src="https://res.cloudinary.com/dutufhhkq/image/upload/v1754980593/colorblind1_tkestm.jpg" alt="Website view for colorblind users - Example 1" style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
-                                <img src="https://res.cloudinary.com/dutufhhkq/image/upload/v1754980593/colorblind2_xlmaxx.jpg" alt="Website view for colorblind users - Example 2" style="max-width: 45%; height: auto; border: 1px solid #ccc; border-radius: 8px;">
-                    </div>
-            </section>
-            <!-- Color Palette -->
-            <section class="color-palette">
-                <div class="container">
-                    <h2 class="section-title">Brand Color Palette</h2>
-                    <div class="palette-grid">
-                        <div class="color-card primary">
-                            <div class="color-swatch" style="background: #2563eb;"></div>
-                            <div class="color-info">
-                                <h4 class="color-name">Primary Blue</h4>
-                                <p class="color-code">#2563eb</p>
-                                <p class="color-usage"> Chosen for its association with trust, stability, and professionalism; it anchors the site’s main actions and brand identity.</p>
+                            <div class="typography-card">
+                                <h3 class="typography-title">Heading Font</h3>
+                                <div class="font-sample heading-font">Poppins</div>
+                                <p class="font-usage">Headings, titles, navigation</p>
+                                <p>We wanted our headings to stand out without looking too formal. Poppins is neat and
+                                    readable but has a friendly vibe, which works well for section titles, navigation
+                                    menus, and page headers.</p>
+                                <div class="font-weights">
+                                    <span class="weight-sample" style="font-weight: 400;">Regular</span>
+                                    <span class="weight-sample" style="font-weight: 500;">Medium</span>
+                                    <span class="weight-sample" style="font-weight: 700;">Bold</span>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div class="color-card secondary">
-                            <div class="color-swatch" style="background: #f97316;"></div>
-                            <div class="color-info">
-                                <h4 class="color-name">Action Orange</h4>
-                                <p class="color-code">#f97316</p>
-                                <p class="color-usage">Adds energy and urgency; draws attention to important call-to-action elements like “Report” or “Search.”</p>
-                            </div>
-                        </div>
-                        
-                        <div class="color-card accent">
-                            <div class="color-swatch" style="background: #3b82f6;"></div>
-                            <div class="color-info">
-                                <h4 class="color-name">Accent Blue</h4>
-                                <p class="color-code">#3b82f6</p>
-                                <p class="color-usage"> Used for highlights, links, and hover states; keeps interactions visually consistent with the brand’s main blue.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="color-card neutral">
-                            <div class="color-swatch" style="background: #f0f6ff;"></div>
-                            <div class="color-info">
-                                <h4 class="color-name">Background</h4>
-                                <p class="color-code">#f0f6ff</p>
-                                <p class="color-usage">A clean, subtle shade that keeps the focus on content while maintaining a fresh and approachable feel.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Typography -->
-            <section class="typography-section">
-                <div class="container">
-                    <h2 class="section-title">Typography System</h2>
-                    <div class="typography-grid">
-                        <div class="typography-card">
-                            <h3 class="typography-title">Brand Font</h3>
-                            <div class="font-sample brand-font">Montserrat</div>
-                            <p class="font-usage">Logo, brand elements, emphasis</p>
-                            <p>We chose Montserrat for our logo and brand name because it’s bold, clean, and easy to recognize. It gives the site a professional look while still feeling modern, which is important since our audience is mostly students and young staff.</p>
-                            <div class="font-weights">
-                                <span class="weight-sample" style="font-weight: 400;">Regular</span>
-                                <span class="weight-sample" style="font-weight: 600;">Semibold</span>
-                                <span class="weight-sample" style="font-weight: 800;">Extrabold</span>
-                            </div>
-                        </div>
-                        
-                        <div class="typography-card">
-                            <h3 class="typography-title">Heading Font</h3>
-                            <div class="font-sample heading-font">Poppins</div>
-                            <p class="font-usage">Headings, titles, navigation</p>
-                            <p>We wanted our headings to stand out without looking too formal. Poppins is neat and readable but has a friendly vibe, which works well for section titles, navigation menus, and page headers.</p>
-                            <div class="font-weights">
-                                <span class="weight-sample" style="font-weight: 400;">Regular</span>
-                                <span class="weight-sample" style="font-weight: 500;">Medium</span>
-                                <span class="weight-sample" style="font-weight: 700;">Bold</span>
-                            </div>
-                        </div>
-                        
-                        <div class="typography-card">
-                            <h3 class="typography-title">Body Font</h3>
-                            <div class="font-sample body-font">Inter</div>
-                            <p class="font-usage">Body text, forms, interface</p>
-                            <p>For the main text, we went with Inter because it’s very clear on all screen sizes. Whether someone is browsing on a phone, tablet, or laptop, the text stays easy to read, which is important for quick item descriptions and form inputs</p>
-                            <div class="font-weights">
-                                <span class="weight-sample" style="font-weight: 300;">Light</span>
-                                <span class="weight-sample" style="font-weight: 400;">Regular</span>
-                                <span class="weight-sample" style="font-weight: 600;">Semibold</span>
+                            <div class="typography-card">
+                                <h3 class="typography-title">Body Font</h3>
+                                <div class="font-sample body-font">Inter</div>
+                                <p class="font-usage">Body text, forms, interface</p>
+                                <p>For the main text, we went with Inter because it’s very clear on all screen sizes.
+                                    Whether someone is browsing on a phone, tablet, or laptop, the text stays easy to
+                                    read, which is important for quick item descriptions and form inputs</p>
+                                <div class="font-weights">
+                                    <span class="weight-sample" style="font-weight: 300;">Light</span>
+                                    <span class="weight-sample" style="font-weight: 400;">Regular</span>
+                                    <span class="weight-sample" style="font-weight: 600;">Semibold</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
+                </section>
 
-            <!-- Brand Personality -->
-            <section class="brand-personality">
-                <div class="container">
-                    <h2 class="section-title">Brand Personality</h2>
-                    <div class="personality-spectrum">
-                        <div class="spectrum-item">
-                            <div class="spectrum-label">Helpful</div>
-                            <div class="spectrum-bar">
-                                <div class="spectrum-fill" style="width: 95%;"></div>
-                            </div>                            
-                        </div>
-                        
-                        <div class="spectrum-item">
-                            <div class="spectrum-label">Trustworthy</div>
-                            <div class="spectrum-bar">
-                                <div class="spectrum-fill" style="width: 98%;"></div>
-                            </div>                           
-                        </div>
-                        
-                        <div class="spectrum-item">
-                            <div class="spectrum-label">Innovative</div>
-                            <div class="spectrum-bar">
-                                <div class="spectrum-fill" style="width: 85%;"></div>
-                            </div>                            
-                        </div>
-                        
-                        <div class="spectrum-item">
-                            <div class="spectrum-label">Approachable</div>
-                            <div class="spectrum-bar">
-                                <div class="spectrum-fill" style="width: 90%;"></div>
-                            </div>                            
-                        </div>
-                        
-                        <div class="spectrum-item">
-                            <div class="spectrum-label">Professional</div>
-                            <div class="spectrum-bar">
-                                <div class="spectrum-fill" style="width: 80%;"></div>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <!-- Competitive Advantage -->
-            <section class="competitive-advantage">
-                <div class="container">
-                    <h2 class="section-title">What Sets Us Apart</h2>
-                    <div class="advantage-grid">
-                        <div class="advantage-card">                            
-                            <h3 class="advantage-title">Smart Matching</h3>
-                            <p class="advantage-text">
-                                Our system matches lost and found items based on details like category, location, and date, so the right owner is found faster without endless scrolling.
-                            </p>
-                        </div>
-                        
-                        <div class="advantage-card">                            
-                            <h3 class="advantage-title">Fair Auctions</h3>
-                            <p class="advantage-text">
-                                For items that remain unclaimed for a long time, we run a transparent auction process so they can still be useful within the community instead of sitting forgotten.
-                            </p>
-                        </div>
-                        
-                        <div class="advantage-card">                            
-                            <h3 class="advantage-title">Verified Claims</h3>
-                            <p class="advantage-text">
-                                We have a step-by-step verification process to make sure items go back to their rightful owners and to prevent false claims.
-                            </p>
-                        </div>
-                        
-                        <div class="advantage-card">                            
-                            <h3 class="advantage-title">Mobile-First</h3>
-                            <p class="advantage-text">
-                                Since most students use their phones for everything, our site is designed to work smoothly on mobile devices without losing speed or features.
-                            </p>
+                <!-- Brand Personality -->
+                <section class="brand-personality">
+                    <div class="container">
+                        <h2 class="section-title">Brand Personality</h2>
+                        <div class="personality-spectrum">
+                            <div class="spectrum-item">
+                                <div class="spectrum-label">Helpful</div>
+                                <div class="spectrum-bar">
+                                    <div class="spectrum-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="spectrum-item">
+                                <div class="spectrum-label">Trustworthy</div>
+                                <div class="spectrum-bar">
+                                    <div class="spectrum-fill" style="width: 98%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="spectrum-item">
+                                <div class="spectrum-label">Innovative</div>
+                                <div class="spectrum-bar">
+                                    <div class="spectrum-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="spectrum-item">
+                                <div class="spectrum-label">Approachable</div>
+                                <div class="spectrum-bar">
+                                    <div class="spectrum-fill" style="width: 90%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="spectrum-item">
+                                <div class="spectrum-label">Professional</div>
+                                <div class="spectrum-bar">
+                                    <div class="spectrum-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+
+                <!-- Competitive Advantage -->
+                <section class="competitive-advantage">
+                    <div class="container">
+                        <h2 class="section-title">What Sets Us Apart</h2>
+                        <div class="advantage-grid">
+                            <div class="advantage-card">
+                                <h3 class="advantage-title">Smart Matching</h3>
+                                <p class="advantage-text">
+                                    Our system matches lost and found items based on details like category, location,
+                                    and date, so the right owner is found faster without endless scrolling.
+                                </p>
+                            </div>
+
+                            <div class="advantage-card">
+                                <h3 class="advantage-title">Fair Auctions</h3>
+                                <p class="advantage-text">
+                                    For items that remain unclaimed for a long time, we run a transparent auction
+                                    process so they can still be useful within the community instead of sitting
+                                    forgotten.
+                                </p>
+                            </div>
+
+                            <div class="advantage-card">
+                                <h3 class="advantage-title">Verified Claims</h3>
+                                <p class="advantage-text">
+                                    We have a step-by-step verification process to make sure items go back to their
+                                    rightful owners and to prevent false claims.
+                                </p>
+                            </div>
+
+                            <div class="advantage-card">
+                                <h3 class="advantage-title">Mobile-First</h3>
+                                <p class="advantage-text">
+                                    Since most students use their phones for everything, our site is designed to work
+                                    smoothly on mobile devices without losing speed or features.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
         </main>
         <section>
-                <h2>Team Roles and Contributions</h2>
-                    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
-                            <thead>
-                                <tr style="background-color: #f0f6ff;">
-                                    <th style="text-align: left;">Team Member</th>
-                                    <th style="text-align: left;">Role</th>
-                                    <th style="text-align: left;">Contributions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>                
-                                    <td>Om</td>
-                                    <td>Backend Development & Project Guidance</td>
-                                    <td>Om built the backend using Keystone, ensuring secure and fast data storage for lost and found items. He set up the database, handled API connections, and made sure the site could handle multiple users. Om also tested and debugged the code, guided Anmol and Gaurav when they were stuck, and contributed to CSS styling for consistency.</td>
-                                </tr>
-                                <tr>
-                                    <td>Anmol</td>
-                                    <td>Frontend Development & Page Coding</td>
-                                    <td>Anmol worked on the frontend, focusing on the search and reporting pages to make them simple and clear for students. He played a big role in coding the Philosophy page layout and making it mobile-friendly. He also helped connect the frontend with Om’s backend so everything worked together smoothly.</td>
-                                </tr>
-                                <tr>
-                                    <td>Gaurav</td>
-                                    <td>Frontend Design & User Experience</td>
-                                    <td>Gaurav focused on designing and structuring the Contact Us and About Us pages, keeping them clean and easy to use. He researched designs to fit our site’s style, contributed to the Philosophy page layout, and added interactive elements. Gaurav also worked on SEO and accessibility to make the site more discoverable and inclusive.</td>
-                                </tr>
-                            </tbody>
-                    </table>
+            <h2>Team Roles and Contributions</h2>
+            <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr style="background-color: #f0f6ff;">
+                        <th style="text-align: left;">Team Member</th>
+                        <th style="text-align: left;">Roll Number</th>
+                        <th style="text-align: left;">Role</th>
+                        <th style="text-align: left;">Contributions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Om Pingale</td>
+                        <td>IPM05177</td>
+                        <td>Backend Development & Project Guidance</td>
+                        <td>Om built the backend using Keystone, ensuring secure and fast data storage for lost and
+                            found items. He set up the database, handled API connections, and made sure the site could
+                            handle multiple users. Om also tested and debugged the code, guided Anmol and Gaurav when
+                            they were stuck, and contributed to CSS styling for consistency.</td>
+                    </tr>
+                    <tr>
+                        <td>Anmol</td>
+                        <td>IPM05</td>
+                        <td>Frontend Development & Page Coding</td>
+                        <td>Anmol worked on the frontend, focusing on the search and reporting pages to make them simple
+                            and clear for students. He played a big role in coding the Philosophy page layout and making
+                            it mobile-friendly. He also helped connect the frontend with Om’s backend so everything
+                            worked together smoothly.</td>
+                    </tr>
+                    <tr>
+                        <td>Gaurav</td>
+                        <td>IPM05189</td>
+                        <td>Frontend Design & User Experience</td>
+                        <td>Gaurav focused on designing and structuring the Contact Us and About Us pages, keeping them
+                            clean and easy to use. He researched designs to fit our site’s style, contributed to the
+                            Philosophy page layout, and added interactive elements. Gaurav also worked on SEO and
+                            accessibility to make the site more discoverable and inclusive.</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
 
@@ -407,11 +900,11 @@
                     <div class="footer-section">
                         <h3 class="footer-title">CanBeFound.com</h3>
                         <p class="footer-description">
-                            Your trusted college Lost and Found platform, helping students and staff 
+                            Your trusted college Lost and Found platform, helping students and staff
                             reconnect with their lost belongings.
                         </p>
                     </div>
-                    
+
                     <div class="footer-section">
                         <h4 class="footer-subtitle">Quick Links</h4>
                         <ul class="footer-links">
@@ -421,7 +914,7 @@
                             <li><a href="auctions.html">Auctions</a></li>
                         </ul>
                     </div>
-                    
+
                     <div class="footer-section">
                         <h4 class="footer-subtitle">Support</h4>
                         <ul class="footer-links">
@@ -431,7 +924,7 @@
                             <li><a href="privacy.html#terms">Terms of Service</a></li>
                         </ul>
                     </div>
-                    
+
                     <div class="footer-section">
                         <h4 class="footer-subtitle">Contact Information</h4>
                         <div class="contact-info">
@@ -441,7 +934,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="footer-bottom">
                     <p>&copy; 2025 CanBeFound.com. All rights reserved.</p>
                     <div class="confidential-footer">
@@ -458,4 +951,5 @@
     <script src="js/philosophy.js"></script>
     <script src="api-client.js"></script>
 </body>
+
 </html>
