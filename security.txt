@@ -1,0 +1,8 @@
+# Security Policy for CanBeFound Lost & Found Website
+Contact: mailto:security@canbefound.com
+Contact: https://anmolberry.github.io/CanBeFound_v1/security
+Expires: 2026-01-01T00:00:00Z
+Preferred-Languages: en
+Canonical: http://anmolberry.github.io/CanBeFound_v1/.well-known/security.txt
+Acknowledgments: http://anmolberry.github.io/CanBeFound_v1/security-acknowledgments
+Policy: http://anmolberry.github.io/CanBeFound_v1/security-policy

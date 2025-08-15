@@ -1,0 +1,11 @@
+# Robots.txt for CanBeFound Lost & Found Website
+
+User-agent: *
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /private/
+Allow: /
+
+Sitemap: http://anmolberry.github.io/CanBeFound_v1/Site Map.html
+
